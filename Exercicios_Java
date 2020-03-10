@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] args) {
     
-    String Nome =  "Leandro da Silva Matumoto";
+    String Nome =  "Leandro Matumoto";
     int RA = 21471900;
     String Curso = "Análise e Desenvolvimento de Sistemas";
     
