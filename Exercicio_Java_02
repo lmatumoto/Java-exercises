@@ -1,0 +1,22 @@
+3 - Faça um algoritmo que leia o salário de um funcionário. Sabendo que o salário do funcionário teve um aumento de 25%, calcular e mostrar o novo salário.
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+class Main {
+
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner (System.in);
+    DecimalFormat df = new DecimalFormat("#.00");
+
+System.out.println("Digite seu salário:");
+
+double salario = entrada.nextDouble();
+
+salario += (salario * 0.25);
+
+System.out.println("Salário novo: R$ "+ df.format(salario));
+
+  }
+}
