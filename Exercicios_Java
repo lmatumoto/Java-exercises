@@ -1,12 +1,21 @@
-   class Main {
-    public static void main(String[] args) {
-    
-    String Nome =  "Leandro Matumoto";
-    int RA = 21471900;
-    String Curso = "Análise e Desenvolvimento de Sistemas";
-    
-    System.out.println("Nome: " + Nome);
-    System.out.println("RA: " + RA);
-    System.out.println("Curso: " + Curso);
-    }
-   }
+1 – Faca um algoritmo que leia o nome e a idade de uma pessoa. Imprimas as informações no final.
+
+import java.util.Scanner;
+
+class Main {
+
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner (System.in);
+
+    System.out.println("Digite seu nome:");
+
+         String nome = entrada.nextLine();
+
+    System.out.println("Digite sua idade:");
+        int idade = Integer.parseInt(entrada.nextLine());
+
+    System.out.println("Seu nome é " +nome + " e você tem "+idade+" anos.");
+
+  }
+}
