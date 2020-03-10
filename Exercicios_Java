@@ -1,0 +1,12 @@
+class Main {
+  public static void main(String[] args) {
+    
+    String Nome =  "Leandro da Silva Matumoto";
+    int RA = 21471900;
+    String Curso = "Análise e Desenvolvimento de Sistemas";
+    
+    System.out.println("Nome: " + Nome);
+    System.out.println("RA: " + RA);
+    System.out.println("Curso: " + Curso);
+    }
+   }
