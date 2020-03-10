@@ -1,0 +1,33 @@
+2 – Faça um algoritmo que leia quatro números, calcule e mostre a soma desses números
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+class Main {
+
+  public static void main(String[] args) {
+
+    Scanner entrada = new Scanner (System.in);
+    DecimalFormat df = new DecimalFormat("#.00");
+
+System.out.println("Digite o primeiro número:");
+
+double n1 = entrada.nextDouble();
+
+System.out.println("Digite o segundo número:");
+
+double n2 = entrada.nextDouble();
+
+System.out.println("Digite o terceiro número:");
+
+double n3 = entrada.nextDouble();
+System.out.println("Digite o quarto número:");
+
+double n4 = entrada.nextDouble();
+
+double soma = (n1 + n2 +n3 + n4);
+
+System.out.println("A soma dos quatro números é: " +df.format(soma));
+
+ }
+}
