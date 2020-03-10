@@ -1,0 +1,33 @@
+4 - Faça um algoritmo que receba um número, calcule e mostre:
+ – O número elevado ao quadrado; 
+– O número elevado ao cubo;
+ – A raiz quadrada do número digitado; 
+– O número elevado a potência 10;
+
+import java.util.Scanner;
+
+class Main {
+
+  public static void main(String[] args) {
+
+  Scanner entrada = new Scanner (System.in);
+
+System.out.println("Digite um número:");
+
+double n = entrada.nextDouble();
+
+double quad = n * n;
+
+double cubo = n * n * n;
+
+double raiz = Math.sqrt(n);
+
+double pot = Math.pow(n,10);
+
+System.out.println(n+ " elevado ao quadrado é " +quad);
+System.out.println(n+ " elevado ao cubo é " +cubo);  
+System.out.println("A raiz quadrada de "+ n + " é " +raiz);
+System.out.println(n+ " elevado a potência 10 é " +pot);  
+
+  }
+}
