@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada =  new Scanner (System.in);
+       
+        System.out.println("Qual período você estuda? \n");
+        
+        System.out.println("Digite M para Manhã");
+        System.out.println("Digite V para Vespertino");
+        System.out.println("Digite N para Noturno");
+        
+        System.out.printf("\nOpção ");
+        
+        char choice = entrada.next().charAt(0);
+        
+        switch(Character.toUpperCase(choice)){
+            case 'M':
+            System.out.println("\nBom dia!");
+            break;
+            case 'V':
+            System.out.println("\nBoa tarde");
+            break;
+            case 'N':
+            System.out.println("\nBoa noite!");
+            break;
+            default:
+                System.out.println("Opção Inválida\n");{
+                main(args);
+            }
+        }
+    }  
+}
