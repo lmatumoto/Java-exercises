@@ -1,0 +1,177 @@
+package javaapplication2;
+
+import java.util.Scanner;
+
+public class JavaApplication2 {
+    public static void main(String[] args) {
+     
+         Scanner entrada = new Scanner(System.in);
+        
+         int menu;
+         int entrad;
+         int qtd;
+         int qtd_s;
+         double preco_entrada = 0;
+         double preco_principal = 0;
+         double preco_sobr = 0;
+         
+         System.out.println(" === Bem vindo ao Restaurante X ==\n ");
+         
+         System.out.println(" == Escolha sua opção ==\n");
+         System.out.println("1 - Entrada");
+         System.out.println("2 - Prato Principal");
+         System.out.println("3 - Sobremesa");
+         
+         System.out.printf("\nOpção: ");
+         
+         menu = entrada.nextInt();
+         
+       
+         switch (menu){
+             case 1: 
+                 System.out.println("\n== Escolha sua Entrada ==\n");
+                 
+                 System.out.println("Digite sua opção:\n");
+                 System.out.println("1 - Canapés - R$ 15,00");
+                 System.out.println("2 - Tábua de Queijos - R$ 30,00");
+                 System.out.println("3 - Salada Caesar - R$ 20,00");
+                 System.out.println("4 - Não quero entrada");
+                
+                 System.out.printf("\nOpção: ");
+                 
+                 entrad = entrada.nextInt();
+                 
+                 if(entrad == 1 || entrad == 2 || entrad == 3){
+                 
+                 System.out.printf("Qual a quantidade? ");
+                 
+                      qtd = entrada.nextInt(); 
+                 
+                 switch (entrad){
+                      
+                     case 1:
+                         System.out.println(qtd + " Canapé");
+                         preco_entrada = 15 * qtd;
+                         break;
+                 
+                     case 2:
+                         System.out.println(qtd + " Tábua de Queijos");
+                         preco_entrada = 30 * qtd;
+                         break;
+                     
+                     case 3:
+                         System.out.println(qtd + " Salada Caesar");
+                         preco_entrada = 20 * qtd;
+                         break;
+                     case 4:
+                         break;
+                 
+                     }
+                 }
+             case 2:
+                 System.out.println("\n== Escolha o Prato Principal ==\n");
+                 
+                  System.out.println("Digite sua opção:\n");
+                 System.out.println("1 - Macarrão - R$ 15,00");
+                 System.out.println("2 - Bife à Parmegiana - R$ 30,00");
+                 System.out.println("3 - Filé de Frango - R$ 18,50");
+                 System.out.println("4 - Não quero prato principal");
+                
+                
+                 System.out.printf("\nOpção: ");
+                 
+                 int principal = entrada.nextInt();
+                 
+                 if(principal == 1 || principal == 2 || principal == 3){
+                 System.out.printf("Qual a quantidade? ");
+                 
+                 int qtd_p = entrada.nextInt();
+                 switch (principal){
+                     case 1:
+                         System.out.println(qtd_p + " Macarrão");
+                         preco_principal = 15 * qtd_p;
+                         break;
+                 
+                     case 2:
+                         System.out.println(qtd_p + " Bife à Parmegiana");
+                         preco_principal = 30 * qtd_p;
+                         break;
+                     
+                     case 3:
+                         System.out.println(qtd_p + " Filé de Frango");
+                         preco_principal = 18.5 * qtd_p;
+                         break;
+                     case 4:
+                         break;
+                     
+                     }
+                 }
+             
+             case 3:
+                 System.out.println("\n== Escolha sua Sobremesa ==\n");
+                 
+                 System.out.println("Digite sua opção:\n");
+                 System.out.println("1 - Gelatina - R$ 8,00");
+                 System.out.println("2 - Pudim - R$ 10,00");
+                 System.out.println("3 - Bolo de Milho - R$ 6,50");
+                 System.out.println("4 - Não quero sobremesa");
+                
+                 
+                 System.out.printf("\nOpção: ");
+                 
+                 int sobr = entrada.nextInt();
+                 
+                 if(sobr == 1 || sobr == 2 || sobr == 3){
+                 System.out.printf("Qual a quantidade? ");
+                 
+                 qtd_s = entrada.nextInt();
+                 
+                 switch (sobr){
+                     case 1:
+                         System.out.println(qtd_s + " Gelatina");
+                         preco_sobr = 8 * qtd_s;
+                         break;
+                 
+                     case 2:
+                         System.out.println(qtd_s + " Pudim");
+                         preco_sobr = 10 * qtd_s;
+                         break;
+                     
+                     case 3:
+                         System.out.println(qtd_s + " Bolo de Milho");
+                         preco_sobr = 6.5 * qtd_s;
+                         break;
+                     
+                     case 4:
+                         break;
+                                 
+                                }
+                }
+                   double total = (preco_entrada + preco_principal + preco_sobr);
+                   System.out.println("\nTotal: R$ " + total );
+                   
+                   System.out.println("\nQual a forma de pagamento?\n");
+                   
+                   System.out.println("1 - Dinheiro (10% de desconto)");
+                   System.out.println("2 - Débito (5% de desconto)");
+                   System.out.println("3 - Crédito\n");
+                   
+                   System.out.printf("Opção:");
+                   
+                   int pag = entrada.nextInt();
+                   
+                   switch(pag){
+                       case 1:
+                        System.out.println("\nValor com desconto: R$ " + (total*0.90));
+                        break;
+                       case 2:
+                        System.out.println("\nValor com desconto: R$ " + (total*0.95));
+                        break;
+                       case 3:
+                        System.out.println("\nTotal: R$ " + (total));
+                       
+                   }
+                   System.out.println("\n === Obrigado pela Preferência ===\n");
+         }      
+    } 
+}
