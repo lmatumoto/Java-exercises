@@ -1,0 +1,62 @@
+/*
+Faça um algoritmo que receba dois números e
+execute as operações listadas a seguir, de acordo
+com a escolha do usuário
+
+ESCOLHA  OPERAÇÃO
+M        MÉDIA ENTRE OS NÚMEROS DIGITADOS
+S        DIFERENÇA ENTRE OS MÚMEROS DIGITADOS
+P        PRODUTO ENTRE OS NÚMEROS DIGITADOS
+D        DIVISÃO DO PRIMEIRO PELO SEGUNDO
+*/
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public Main { 
+    public static void main(String[] args) {
+       
+        Scanner entrada = new Scanner (System.in);
+        DecimalFormat df = new DecimalFormat("#.00");
+        
+        System.out.println("Digite o 1º número: ");
+        
+        double num1 = entrada.nextDouble();
+        
+        System.out.println("Digite o 2º número: ");
+        
+        double num2 = entrada.nextDouble();
+        
+        System.out.println("\nDigite M para a média entre os números digitados");
+        System.out.println("Digite S para a diferença entre os números digitados");
+        System.out.println("Digite P para o produto entre os números digitados");
+        System.out.println("Digite D para a divisão do primeiro pelo segundo");
+        
+        System.out.printf("Opção: ");
+        
+        char escolha = entrada.next().charAt(0);
+        
+        switch(Character.toUpperCase(escolha)){
+            case 'M':
+                System.out.println("\nResultado: " + df.format((num1 + num2)/2));
+                break;
+            case 'S':
+                if(num1>num2){
+                  System.out.println("Resultado: " + df.format(num1 - num2));
+                break;
+                }else{
+                  System.out.println("Resultado: " + df.format((num2 - num1)*-1));
+                break;
+                }
+            case 'P': 
+                System.out.println("Resultado: " + df.format(num1 * num2));
+                break;
+            case 'D':
+                System.out.println("Resultado: " + df.format(num1 / num2));
+                break;
+            default:
+                System.out.println("\nOpção Inválida\n");
+                main(args);
+        }
+    }   
+}
