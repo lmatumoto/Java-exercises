@@ -1,0 +1,22 @@
+// Faça um algoritmo que leia uma nota e valide se ela está entre 0 e 10.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner (System.in);
+    
+        double nota;
+        do{
+            System.out.printf("Digite uma nota: ");
+            nota = entrada.nextDouble();
+            if(nota< 0 || nota > 10){
+                System.out.println("Nota inválida. A nota deve estar entre O e 10");
+                System.out.println("Digite novamente\n"); 
+            }else{
+                System.out.println("Nota válida");
+            }
+        }while(!(nota>= 0 && nota <=10));
+    }    
+}
