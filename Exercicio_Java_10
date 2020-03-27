@@ -1,0 +1,31 @@
+// Faça um algoritmo que leia 10 números inteiros e imprima o menor número da lista.
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner (System.in);
+        
+        int cont = 0;
+        int cont_n = 1;
+        double num;
+        double menor_num = Integer.MAX_VALUE;
+        
+        do{
+            System.out.printf("Digite o " + cont_n + "º número ");
+            num = entrada.nextDouble();
+            
+            if(num < menor_num){
+                menor_num = num;               
+            }else{
+                menor_num = menor_num;
+            }
+            cont = cont + 1;
+            cont_n = cont_n + 1;
+            
+        }while(cont < 10);
+        System.out.println("\nO menor número é " + menor_num );
+    }   
+}
