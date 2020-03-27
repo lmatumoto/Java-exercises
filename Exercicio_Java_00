@@ -1,4 +1,4 @@
-1 – Faca um algoritmo que leia o nome e a idade de uma pessoa. Imprimas as informações no final.
+// 1 – Faca um algoritmo que leia o nome e a idade de uma pessoa. Imprimas as informações no final.
 
 import java.util.Scanner;
 
