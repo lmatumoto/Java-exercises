@@ -1,0 +1,37 @@
+/* Faça um algoritmo que leia 10 números inteiros e imprima quantos são
+pares e quantos são ímpares. */
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+       
+         Scanner entrada = new Scanner(System.in);
+         
+         int par = 0;
+         int impar = 0;
+         int cont = 0;
+         int num;
+         int cont_num = 1;
+         
+         do{
+             System.out.printf("Digite o " + cont_num + "º número: ");
+             num = entrada.nextInt();
+             if(num%2 == 0){
+                 par = par + 1;
+                 cont_num = cont_num + 1;
+                 
+                 cont = cont + 1;
+             }else{
+                 impar = impar + 1;
+                 cont_num = cont_num + 1;
+                 cont = cont + 1;
+             }
+             
+         }while(cont<10);
+         
+         System.out.println("\nO número de pares é: " + par);
+         System.out.println("O número de impares é: " + impar);    
+    }  
+}
