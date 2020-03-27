@@ -1,4 +1,6 @@
-3 - Faça um algoritmo que leia o salário de um funcionário. Sabendo que o salário do funcionário teve um aumento de 25%, calcular e mostrar o novo salário.
+/* 3 - Faça um algoritmo que leia o salário de um funcionário. 
+Sabendo que o salário do funcionário teve um aumento de 25%, 
+calcular e mostrar o novo salário. */
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
