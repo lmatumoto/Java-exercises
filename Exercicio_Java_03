@@ -1,8 +1,8 @@
-4 - Faça um algoritmo que receba um número, calcule e mostre:
+/* Faça um algoritmo que receba um número, calcule e mostre:
  – O número elevado ao quadrado; 
 – O número elevado ao cubo;
  – A raiz quadrada do número digitado; 
-– O número elevado a potência 10;
+– O número elevado a potência 10; */
 
 import java.util.Scanner;
 
