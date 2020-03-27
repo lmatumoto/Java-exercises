@@ -1,0 +1,22 @@
+// Faça um algoritmo que leia um número e imprima a tabuada desse número até o 10
+
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        int cont = 0;
+        System.out.println("= Tabuada =\n");
+        
+        System.out.printf("Digite um número inteiro: ");
+        int num = entrada.nextInt();
+        
+        do{
+        
+        System.out.println(num + " x " + cont + " = " + (num*cont));
+        cont = cont + 1;
+        
+        }while(cont<=10);    
+    }   
+}
