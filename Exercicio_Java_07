@@ -1,0 +1,28 @@
+// Faça um algoritmo que leia um conjunto de números e faça a somatória deles. 
+
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        DecimalFormat df = new DecimalFormat("#.00");
+        
+       char resp = 's';
+       double num, acm = 0;
+       
+       while(resp == 's' || resp == 'S'){
+           System.out.printf("Digite um número: ");
+           num = entrada.nextDouble();
+           
+           acm = acm + num;
+           
+           System.out.printf("Deseja continuar? (s/n)");
+           
+           resp = entrada.next().charAt(0);
+          }
+        System.out.println("Resultado: " + df.format(acm));     
+        }
+    }
